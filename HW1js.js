@@ -1,12 +1,14 @@
-let age1 = 70;
-let age2 = 18;
-let age3 = 60;
-if (age1 < age2) {
-    console.log(`You don’t have access cause your age is ${age1} It’s less then`);
-} else if (age1 >=  age2 && age1 < age3) {
-    console.log('Welcome!');
-} else if (age1 > age3) {
-    console.log('Keep calm and look Culture channel');
-} else {
-    console.log("Technical work");
+let checkAge = () => {
+    age = prompt('Enter age');
+    // if (typeof age !== 'number') console.log("Enter number");
+    if (isNaN(age) === true || age === '') alert("Enter number");
+    else if (age < 18) alert(`You don’t have access cause your age is ${age} It’s less then 18`);
+    else if (age >=  18 && age < 60) alert('Welcome!');
+    else if (age > 60) alert('Keep calm and look Culture channel');
+    else alert("Technical work");
 }
+// checkAge(17);
+// checkAge(18);
+// checkAge(61);
+// checkAge('hello');
+// checkAge('2');

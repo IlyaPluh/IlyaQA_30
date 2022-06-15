@@ -1,3 +1,42 @@
+HW_1* 
+Задания с разным количеством звездочек:)
+1*:
+Преобразовать написанный код в 26-33 пунктах в функцию, принимающую на вход возраст.
+Пример: const checkAge = function(age) {
+Ваши преобразования
+}
+Вывести в консоль результат работы функции с возрастами 17, 18, 61
+
+2*:
+Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка.
+
+3**:
+Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
+
+4***:
+Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
+
+<body>
+    <p><input type="button" onclick="checkAge()" value="Check Age"></p>
+    <script src="HW1js.js"></script>
+</body>
+
+let checkAge = () => {
+    age = prompt('Enter age');
+    // if (typeof age !== 'number') console.log("Enter number");
+    if (isNaN(age) === true || age === '') alert("Enter number");
+    else if (age < 18) alert(`You don’t have access cause your age is ${age} It’s less then 18`);
+    else if (age >=  18 && age < 60) alert('Welcome!');
+    else if (age > 60) alert('Keep calm and look Culture channel');
+    else alert("Technical work");
+}
+// checkAge(17);
+// checkAge(18);
+// checkAge(61);
+// checkAge('hello');
+// checkAge('2');
+
+
 JS. HW_1
 
  1. Создать переменную “item_1”
