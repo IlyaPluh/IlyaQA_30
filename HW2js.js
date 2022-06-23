@@ -8,10 +8,8 @@ stepen(2,10);
 
 //2*
 const printSmile = (stroka, numberOfRows) => {
-    newstroka = '';
     for (let i = 1; i <= numberOfRows; i++) {
-        newstroka += stroka;
-        console.log(newstroka);
+        console.log(stroka.repeat(i));
     }
 }
 printSmile(":)", 5);
