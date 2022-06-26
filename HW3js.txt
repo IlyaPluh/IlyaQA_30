@@ -24,4 +24,4 @@ Task 4****
 Функция строит древовидный список компании.
 При ее вызове в консоль должен вывестись список подразделений компании с указанием количества сотрудников и с соблюдение вложенности подразделений.
 
-Кароч ключевые слова: forEach, map, filter, indexOf, objects, arrays, findIndex, includes, for..of, for..in
+Кароч ключевые слова: forEach, map, filter, indexOf, objects, arrays, findIndex, includes, for..of, for..in, find, some, reduce, join, slice, Деструктурирующее присваивание
