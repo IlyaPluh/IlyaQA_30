@@ -1,5 +1,3 @@
-//task3.1
-
     // const enterprises = [
     //   {
     //     id: 1,
@@ -56,16 +54,9 @@
     //   }
     // ]
 
-    const task3_1 = () => {
-      const fs = require('fs');
-      const rawdata = fs.readFileSync('task3.json');
-      const enterprises = JSON.parse(rawdata);
-    //enterprises.forEach(el => console.log(el.departments.reduce((count, person) => count + person.employees_count, 0)))
-    //const newenterprises = enterprises.map(el => el.departments.reduce((a, b) => a + b.employees_count, 0))
-    //console.log(newenterprises);
-
-    let allemployees = 0;
-    enterprises.map(el => console.log(`${el.name} (${el.departments.reduce((count, person) => allemployees = count + person.employees_count, 0) === 0 ? 'нет' : allemployees} сотрудников)${el.departments.map(el => `\n- ${el.name} (${el.employees_count === 0 ? 'нет' : el.employees_count} сотрудников)`)}`));
-  }
-  task3_1();
-  
+    const getEnterpriseName = () => {
+        const fs = require('fs');
+        const rawdata = fs.readFileSync('task3.json');
+        const enterprises = JSON.parse(rawdata);
+        
+    }
