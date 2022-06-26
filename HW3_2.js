@@ -53,10 +53,17 @@
     //     ]
     //   }
     // ]
-
-    const getEnterpriseName = () => {
+    //el.id === enter || 
+    const getEnterpriseName = (enter) => {
         const fs = require('fs');
         const rawdata = fs.readFileSync('task3.json');
         const enterprises = JSON.parse(rawdata);
-        
+        enterprises.map(el => {
+            for (let {id} of el.departments) {
+                if (id === enter || el.id === enter)
+                console.log(el.name)
+                
+        }})
     }
+    getEnterpriseName(5);
+    //getEnterpriseName('"Отдел аналитики"')

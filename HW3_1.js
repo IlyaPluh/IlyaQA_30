@@ -65,7 +65,7 @@
     //console.log(newenterprises);
 
     let allemployees = 0;
-    enterprises.map(el => console.log(`${el.name} (${el.departments.reduce((count, person) => allemployees = count + person.employees_count, 0) === 0 ? 'нет' : allemployees} сотрудников)${el.departments.map(el => `\n- ${el.name} (${el.employees_count === 0 ? 'нет' : el.employees_count} сотрудников)`)}`));
+    enterprises.filter(el => console.log(`${el.name} (${el.departments.reduce((count, person) => allemployees = count + person.employees_count, 0) === 0 ? 'нет' : allemployees} сотрудников)${el.departments.map(el => `\n- ${el.name} (${el.employees_count === 0 ? 'нет' : el.employees_count} сотрудников)`)}`));
   }
   task3_1();
   
