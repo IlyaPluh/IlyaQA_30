@@ -89,8 +89,10 @@ const task2 = () => {
     const fs = require('fs');
     const rawdata = fs.readFileSync('task2.json');
     const info = JSON.parse(rawdata);
-    const obj = {};
-    const newinfo = info.filter(({name}) => (!obj[name] && (obj[name] = 1)));
-    console.log(newinfo);
+    // const obj = {};
+    // const newinfo = info.filter(({name}) => (!obj[name] && (obj[name] = 1)));
+    // console.log(newinfo);
+    let unique = Array.from(new Set(info.map((item) => JSON.stringify(item)))).map((item) => JSON.parse(item));
+    console.log(unique);
 };
 task2();
